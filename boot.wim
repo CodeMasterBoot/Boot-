@@ -1,0 +1,17 @@
+\\ Boot.sdi 
+\\ Boot.wim
+# Bootable Files Needed
+\\ Create boot
+\\ Create secure boot
+\\ Create USB Boot
+\\ Create WindowsRE
+\\ Create WindowsPE 
+\\ 1.0GB 
+@ Command :Mainboot
+%Volume/
+# Windows PE in Use
+%Volume\Windows
+# Disable WindowsRE
+@ -(WindowsPE.Boot
+\\ Install 
+=WindowsRE %OnlyUse if Delete
